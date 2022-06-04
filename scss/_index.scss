@@ -1,0 +1,93 @@
+// * {
+//   outline: 1px solid red;
+// }
+
+body {
+  background-color: $main-bg;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 80px 85px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.title {
+  width: 350px;
+  height: 366px;
+  color: $primary;
+
+  &-decoration {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    .line {
+      height: 1px;
+      width: 280px;
+      background-color: $primary;
+      align-self: center;
+    }
+  }
+
+  &-text {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+  }
+}
+
+.card {
+  width: 350px;
+  height: 366px;
+  background-color: $minor-bg;
+  margin-bottom: 40px;
+  border-radius: 100px 0px 30px 0px;
+  box-shadow: 0px 3px 10px $secondary;
+  color: $primary;
+
+  &-container {
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 64px 40px;
+  }
+
+  &-title {
+    width: 118px;
+    font-size: 128px;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px $main-bg;
+  }
+
+  &-text {
+    font-size: 24px;
+    margin-top: 8px;
+
+    // 因為只想讓前三個有做推右，所以使用nth-child的語法
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-right: 43px;
+    }
+  }
+}

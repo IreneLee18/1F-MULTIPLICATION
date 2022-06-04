@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新手 JS 地下城 1F - 9x9 乘法表</title>
+  <link rel="stylesheet" href="scss/all.css">
+</head>
+
+<body>
+
+  <div id="app" class="container">
+    <div class="title">
+      <div class="title-decoration">
+        <div>×</div>
+        <div class="line"></div>
+        <div>×</div>
+      </div>
+      <div class="title-text">
+        <h1>九九乘法表</h1>
+        <p>MULTIPLICATION CHART</p>
+      </div>
+      <div class="title-decoration">
+        <div>×</div>
+        <div class="line"></div>
+        <div>×</div>
+      </div>
+    </div>
+
+    <card v-for="num in 8" :key="num" :first="++num"></card>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.34-beta.1/vue.global.min.js'></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
