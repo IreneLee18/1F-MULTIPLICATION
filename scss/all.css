@@ -221,4 +221,11 @@ body {
   margin: 0 auto;
   padding-right: 85px;
 }
+
+@media (max-width: 900px) {
+  .footer-container {
+    padding: 0;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=all.css.map */
