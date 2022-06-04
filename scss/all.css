@@ -65,9 +65,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .title {
@@ -166,5 +166,20 @@ body {
 
 .card-text:nth-child(1), .card-text:nth-child(2), .card-text:nth-child(3) {
   margin-right: 43px;
+}
+
+.footer {
+  height: 34px;
+  background-color: #2EB738;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: end;
+  line-height: 34px;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right: 85px;
 }
 /*# sourceMappingURL=all.css.map */
