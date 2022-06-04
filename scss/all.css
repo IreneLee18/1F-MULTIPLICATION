@@ -70,10 +70,24 @@ body {
           justify-content: space-evenly;
 }
 
+@media (max-width: 900px) {
+  .container {
+    padding: 80px 0;
+  }
+}
+
 .title {
   width: 350px;
   height: 366px;
   color: #2EB738;
+}
+
+@media (max-width: 900px) {
+  .title {
+    width: 300px;
+    height: 316px;
+    margin-bottom: 40px;
+  }
 }
 
 .title-decoration {
@@ -133,6 +147,13 @@ body {
   color: #2EB738;
 }
 
+@media (max-width: 900px) {
+  .card {
+    width: 300px;
+    height: 316px;
+  }
+}
+
 .card-container {
   height: 238px;
   display: -webkit-box;
@@ -152,6 +173,12 @@ body {
   padding: 64px 40px;
 }
 
+@media (max-width: 900px) {
+  .card-container {
+    height: 188px;
+  }
+}
+
 .card-title {
   width: 118px;
   font-size: 128px;
@@ -159,9 +186,21 @@ body {
   text-shadow: 4px 3px 0px #F0F0F0;
 }
 
+@media (max-width: 900px) {
+  .card-title {
+    font-size: 81px;
+  }
+}
+
 .card-text {
   font-size: 24px;
   margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .card-text {
+    font-size: 20px;
+  }
 }
 
 .card-text:nth-child(1), .card-text:nth-child(2), .card-text:nth-child(3) {
